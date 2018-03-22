@@ -25,7 +25,11 @@ SECRET_KEY = 'wyy925ps#-lq-*++8pf1(@lhuv^2rgx9(-@x4t^eh#5(h+fgsm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com']
+=======
+ALLOWED_HOSTS = ['sachinitk.pythonanywhere.com']
+>>>>>>> 8da6b6de95623fa10b0e45638be92bddf2531057
 
 
 # Application definition
