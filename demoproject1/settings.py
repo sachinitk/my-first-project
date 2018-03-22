@@ -25,7 +25,7 @@ SECRET_KEY = 'wyy925ps#-lq-*++8pf1(@lhuv^2rgx9(-@x4t^eh#5(h+fgsm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','.pythonanywhere.com']
 
 
 # Application definition
@@ -74,12 +74,18 @@ WSGI_APPLICATION = 'demoproject1.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
+#DATABASES = {
+ #   'default': {
+  #      'ENGINE': 'django.db.backends.mysql',
+   #     'OPTIONS': {
+    #        'read_default_file': '/etc/mysql/my.cnf',
+	#        }
+	#}
+#}
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': '/etc/mysql/my.cnf',
-	        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 	}
 }
 
